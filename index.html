@@ -1,18 +1,113 @@
 <!--
-   Prisoner's Dilemma Project for CSC2210
-   Contributers: Michaela Mucha, Knox Hall, Jayden Olsen
+   Project Authors: Michaela Mucha, Jayden Olsen, Knox Hall
+   Date: 1/25/16
+   Class: CSC-2210 Spring 2016
+   Location: ~/public_html/csc2210/
    -->
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-   <head>
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-      <link rel="stylesheet" type="text/css" href="css/style.css" />
-      <link href="css/hover.css" rel="stylesheet" media="all">
-      <script type='text/javascript' src='include/jquery-1.12.0.min.js'></script>
-      <script type='text/javascript' src='include/fade.js'></script>
-      <title>Prisoner's Dilemma</title>
-   </head>
-   <body>
-   <h1>HOMEPAGE TEST</h1>
-   </body>
+<head>
+  <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"
+  type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel=
+  'stylesheet' type='text/css'>
+  <link href="style.css" media="all" rel="stylesheet">
+  <script src='../include/jquery-1.12.0.min.js' type='text/javascript'>
+  </script>
+  <script src='../include/fade.js' type='text/javascript'>
+  </script>
+
+  <title>Welcome</title>
+</head>
+
+<body>
+  <h1 class="title">WELCOME TO THE GAME</h1>
+
+
+  <div class="main">
+    <p>Welcome to The Prisoner's Dilemma. You may start a new game below, and
+    choose what kind of opponent you would like to play against.</p>
+
+
+    <div id="gamebox">
+      <div class="content" id="initframe">
+        <table>
+          <tr>
+            <th colspan="2">What kind of game would you like?</th>
+          </tr>
+
+
+          <tr>
+            <td>
+              <img onclick="show('singleframe')" src="data/robo.png">
+
+              <p>Against a Robot</p>
+            </td>
+
+            <td>
+              <img onclick="show('doubleframe')" src="data/person.png">
+
+              <p>Against a Person</p>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td colspan="2">
+              <img onclick="instruct()" src="data/instructor.png">
+
+              <p>Instructor</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+
+      <div class="content hidden" id="singleframe">
+        <h2 class="subtitle">Welcome to Single Player</h2>
+        <table id="gametable">
+        <tr><td id="contentcell"></td><td id="chatcell"></td></tr>
+        <tr>
+          <td id="messagecell" colspan="2">
+          <p>Enter your message: </p>
+          <textarea id="chatbox" maxlength="50"></textarea>
+          </td>
+        </tr>
+        </table>
+      </div>
+
+
+      <div class="content hidden" id="doubleframe">
+        <h2 class="subtitle">Welcome to Multi Player</h2>
+
+
+        <form action="process_signup.php" id="userform" method="post" name=
+        "signup" onsubmit="return validate(this);">
+          <label for="user">Enter a Username</label> <input id="user" name=
+          "user" type="text" value=""><br>
+          <input name="submit" type="submit" value="Signup">
+        </form>
+      </div>
+
+
+      <div class="content hidden" id="instructframe">
+        <h2 class="subtitle">Instructor mode Engaged</h2>
+        <p id="thedate">
+        </p>
+        
+        
+      </div>
+    </div>
+
+
+    <center>
+      <button class="greenbutton" onclick="show('initframe')">Restart</button>
+    </center>
+
+
+    <p id="pcount">Active Games: </p>
+  </div>
+  <script type='text/javascript' src="script.js">
+  </script>
+</body>
 </html>

@@ -1,5 +1,5 @@
 <!--
-   Project Contributors: Michaela Mucha, Jayden Olsen, Knox Hall
+   Name: Knox Hall
    Date: 1/25/16
    Class: CSC-2210 Spring 2016
    Location: ~/public_html/csc2210/
@@ -53,15 +53,36 @@
 
 
           <tr>
-            <td colspan="2">
+            <td>
               <img onclick="instruct()" src="data/instructor.png">
 
               <p>Instructor</p>
             </td>
+            <td>
+              <img onclick="show('loginframe')" src="data/instructor.png">
+
+              <p>Login</p>
+            </td>
           </tr>
         </table>
+        
       </div>
+      <div class="content hidden" id="loginframe">
+      <form action="login(this)" method="POST">
+      <h2>Sign In</h2>
+      <fieldset>
 
+        <p><label for="email">E-mail address</label></p>
+        <p><input type="email" class="ibox" id="email" value="mail@address.com" onBlur="if(this.value=='')this.value='mail@address.com'" onFocus="if(this.value=='mail@address.com')this.value=''"></p> <!-- JS because of IE support; better: placeholder="mail@address.com" -->
+
+        <p><label for="password">Password</label></p>
+        <p><input type="password" class="ibox" id="password" value="password" onBlur="if(this.value=='')this.value='password'" onFocus="if(this.value=='password')this.value=''"></p> <!-- JS because of IE support; better: placeholder="password" -->
+
+        <p><input type="submit" class="submit" value="Sign In"></p>
+
+      </fieldset>
+
+    </form></div>
 
       <div class="content hidden" id="singleframe">
         <h2 class="subtitle">Welcome to Single Player</h2>
@@ -69,8 +90,16 @@
         <tr><td id="contentcell"></td><td id="chatcell"></td></tr>
         <tr>
           <td id="messagecell" colspan="2">
-          <p>Enter your message: </p>
-          <textarea id="chatbox" maxlength="50"></textarea>
+          <h2>jQuery/PHP Chat</h2>
+    
+    <p id="name-area"></p>
+    
+    <div id="chat-wrap"><div id="chat-area"></div></div>
+    
+    <form id="sendmessage">
+        <p>Your message: </p>
+        <textarea id="sender" maxlength = '100'></textarea>
+    </form>
           </td>
         </tr>
         </table>

@@ -1,66 +1,200 @@
-<li>BillyJoe: whats up</li>
-<li>BillyJoe: hi</li>
-<li>BillyJoe: ok</li>
-<li>BillyJoe: bye</li>
-<li>BillyJoe: wwait</li>
-<li>BillyJoe: asas</li>
-<li>BillyJoe: no</li>
-<li>BillyJoe: no</li>
-<li>BillyJoe: ok</li>
-<li>Susan: ok</li>
-<li>Susan: wiat</li>
-<li>Susan: wait</li>
-<li>bill: hi</li>
-<li>bill: hi</li>
-<li>bill: hi</li>
-<li>bill: ok</li>
-<li>hi: hi</li>
-<li>hi: hi</li>
-<li>yo: hi</li>
-<li>yo: no</li>
-<li>yo: oh</li>
-<li>yo: ok</li>
-<li>yo: bow</li>
-<li>yo: low</li>
-<li>yo: cow</li>
-<li>yo: now</li>
-<li>yo: lw</li>
-<li>yo: sow</li>
-<li>hi: hi</li>
-<li>hi: no</li>
-<li>hi: wait</li>
-<li>hi: stop</li>
-<li>hi: hi</li>
-<li>bill: hi</li>
-<li>Billy: Hi</li>
-<li>Billy: Yo</li>
-<li>Billy: Hi</li>
-<li>Billy: Ok</li>
-<li>Billy: No</li>
-<li>Billy: Wait</li>
-<li>hi: hi</li>
-<li>Billy: Yo</li>
-<li>Billy: No</li>
-<li>Billy: Don't </li>
-<li>Billy: Why</li>
-<li>Billy: No</li>
-<li>Ph: No</li>
-<li>Ph: Hi</li>
-<li>Ph: No</li>
-<li>sue: hi</li>
-<li>sue: no</li>
-<li>sue: don't</li>
-<li>robert: hi</li>
-<li>Ph: No</li>
-<li>Ph: I'm ph</li>
-<li>Ph: Why</li>
-<li>robert: no your not</li>
-<li>yo: no</li>
-<li>yo: whoa</li>
-<li>yo: ho</li>
-<li>yo: go</li>
-<li>yo: no</li>
-<li>oh: hi</li>
-<li>lolli: hi</li>
-<li>lolli: no</li>
-<li>Robert Smith: Hello chaps</li>
+<li>Bob: a<span>09:47:09pm </span></li>
+<li>Bob: a<span>09:47:09pm </span></li>
+<li>Bob: a<span>09:47:09pm </span></li>
+<li>Bob: a<span>09:47:09pm </span></li>
+<li>Bob: a<span>09:47:10pm </span></li>
+<li>Bob: a<span>09:47:11pm </span></li>
+<li>Bob: a<span>09:47:12pm </span></li>
+<li>Bob: a<span>09:47:12pm </span></li>
+<li>Bob: a<span>09:47:13pm </span></li>
+<li>Bob: a<span>09:47:14pm </span></li>
+<li>Bob: a<span>09:47:15pm </span></li>
+<li>Bob: a<span>09:47:16pm </span></li>
+<li>Bob: a<span>09:47:16pm </span></li>
+<li>Bob: a<span>09:47:18pm </span></li>
+<li>Bob: hi<span>09:50:22pm </span></li>
+<li>Bob: wait<span>09:50:25pm </span></li>
+<li>Bob: what<span>09:50:27pm </span></li>
+<li>Bob: what<span>09:50:27pm </span></li>
+<li>Bob: what<span>09:50:27pm </span></li>
+<li>Bob: what<span>09:50:27pm </span></li>
+<li>Bob: what<span>09:50:27pm </span></li>
+<li>Bob: what<span>09:50:27pm </span></li>
+<li>Bob: ok. Bye!<span>09:47:06pm </span></li>
+<li>Bob: a<span>09:47:08pm </span></li>
+<li>tim: what<span>09:51:27pm </span></li>
+<li>tim: why<span>09:51:28pm </span></li>
+<li>tim: how<span>09:51:30pm </span></li>
+<li>tim: where<span>09:51:31pm </span></li>
+<li>tim: when<span>09:51:34pm </span></li>
+<li>tim: because<span>09:51:36pm </span></li>
+<li>tim: what<span>09:51:46pm </span></li>
+<li>Tiny Tim: hello boys!<span>10:00:23pm </span></li>
+<li>Tiny Tim: how is it going!<span>10:00:28pm </span></li>
+<li>Tiny Tim: why<span>10:01:04pm </span></li>
+<li>bill: hi<span>10:06:33pm </span></li>
+<li>bill: guys<span>10:06:36pm </span></li>
+<li>Granny: hi guys<span>10:07:10pm </span></li>
+<li>Hi: hi<span>10:09:29pm </span></li>
+<li>Hi: can<span>10:09:42pm </span></li>
+<li>Hi: we<span>10:09:43pm </span></li>
+<li>Hi: get<span>10:09:44pm </span></li>
+<li>Hi: rid<span>10:09:45pm </span></li>
+<li>Hi: of<span>10:09:47pm </span></li>
+<li>Hi: all<span>10:09:48pm </span></li>
+<li>Hi: the<span>10:09:49pm </span></li>
+<li>Hi: crazy<span>10:09:51pm </span></li>
+<li>Hi: a's<span>10:09:53pm </span></li>
+<li>Hi: that<span>10:09:55pm </span></li>
+<li>Hi: are<span>10:09:57pm </span></li>
+<li>Hi: up<span>10:09:58pm </span></li>
+<li>Hi: there<span>10:10:00pm </span></li>
+<li>Hi: ok<span>10:10:01pm </span></li>
+<li>Hi: bye<span>10:10:03pm </span></li>
+<li>Hi: thx<span>10:10:04pm </span></li>
+<li>Hi: like ya guys<span>10:10:09pm </span></li>
+<li>Hi: q<span>10:10:20pm </span></li>
+<li>Hi: q<span>10:10:20pm </span></li>
+<li>Hi: q<span>10:10:20pm </span></li>
+<li>Hi: q<span>10:10:21pm </span></li>
+<li>Hi: <span>10:10:21pm </span></li>
+<li>Hi: q<span>10:10:21pm </span></li>
+<li>Hi: <span>10:10:21pm </span></li>
+<li>Hi: q<span>10:10:22pm </span></li>
+<li>Hi: q<span>10:10:22pm </span></li>
+<li>Hi: q<span>10:10:22pm </span></li>
+<li>Hi: q<span>10:10:22pm </span></li>
+<li>Hi: q<span>10:10:25pm </span></li>
+<li>Hi: q<span>10:10:25pm </span></li>
+<li>Hi: q<span>10:10:25pm </span></li>
+<li>Hi: q<span>10:10:26pm </span></li>
+<li>Hi: q<span>10:10:26pm </span></li>
+<li>sam: hi<span>10:11:42pm </span></li>
+<li>sam: what<span>10:11:51pm </span></li>
+<li>sam: how<span>10:11:52pm </span></li>
+<li>sam: when<span>10:11:54pm </span></li>
+<li>billy: hi<span>10:18:23pm </span></li>
+<li>billy: whats up<span>10:18:27pm </span></li>
+<li>billy: why<span>10:20:32pm </span></li>
+<li>Guest38: hi<span>10:23:06pm </span></li>
+<li>Guest36: yo<span>10:23:22pm </span></li>
+<li>Guest55: why<span>10:23:31pm </span></li>
+<li>Guest86: hello<span>10:26:31pm </span></li>
+<li>Guest86: guys<span>10:26:34pm </span></li>
+<li>Guest38: hi<span>10:30:35pm </span></li>
+<li>Guest38: why<span>10:30:39pm </span></li>
+<li>Guest39: yo<span>10:31:44pm </span></li>
+<li>Guest39: why<span>10:31:47pm </span></li>
+<li>Guest25: hi<span>10:32:00pm </span></li>
+<li>Bobert: Samuel<span>10:59:50pm </span></li>
+<li>Bobert: Are you here? <span>10:59:58pm </span></li>
+<li>Tommy: Hi<span>11:04:22pm </span></li>
+<li>Tommy: Hi<span>11:04:26pm </span></li>
+<li>Tommy: What<span>11:04:31pm </span></li>
+<li>Macle: Hello<span>12:09:41pm </span></li>
+<li>Macle: why<span>12:09:45pm </span></li>
+<li>Macle: how<span>12:09:48pm </span></li>
+<li>Macle: when<span>12:09:49pm </span></li>
+
+<li>Samuel: how so<span>02:12:12pm </span></li>
+<li>hello: hi<span>02:12:29pm </span></li>
+<li>Tim: hi<span>02:17:57pm </span></li>
+<li>Guest68: Hi<span>02:32:08pm </span></li>
+<li>bill: hi<span>07:34:22pm </span></li>
+<li>Guest22: hi<span>08:43:49pm </span></li>
+<li>Guest22: whats up guys<span>08:43:53pm </span></li>
+<li>Guest74: hi<span>08:45:00pm </span></li>
+<li>Guest56: hi<span>08:47:59pm </span></li>
+<li>Guest34: Hi<span>08:48:36pm </span></li>
+<li>Guest23: Yo<span>08:48:48pm </span></li>
+<li>Guest71: hi<span>10:01:31pm </span></li>
+<li>Guest50: Hi<span>10:01:47pm </span></li>
+<li>Guest50: Why<span>10:01:51pm </span></li>
+<li>bill: hi<span>10:07:21pm </span></li>
+<li>bill: why<span>10:07:24pm </span></li>
+<li>Lol: Why<span>10:07:37pm </span></li>
+<li>Daddio: Yo knox<span>10:12:58pm </span></li>
+<li>Guest44: hi<span>10:13:06pm </span></li>
+<li>Guest44: are you on a phone?<span>10:13:14pm </span></li>
+<li>Daddio: Who is guest 44<span>10:13:32pm </span></li>
+<li>knox: me<span>10:13:39pm </span></li>
+<li>knox: swipe left<span>10:13:46pm </span></li>
+<li>knox: the page changes<span>10:13:52pm </span></li>
+<li>knox: and you can swipe back<span>10:13:57pm </span></li>
+<li>Daddio: Wat doin dawg<span>10:14:39pm </span></li>
+<li>knox: nothing much<span>10:14:44pm </span></li>
+<li>knox: just fixing up this website<span>10:14:51pm </span></li>
+<li>Daddio: I swiped!!<span>10:15:23pm </span></li>
+<li>knox: haha<span>10:15:31pm </span></li>
+<li>knox: I need to make a visit counter....<span>10:15:42pm </span></li>
+<li>knox: still here?<span>10:17:00pm </span></li>
+<li>Sam what's all the chit chat about?: Hewow?<span>10:17:03pm </span></li>
+<li>knox: haha<span>10:17:10pm </span></li>
+<li>knox: who is that<span>10:17:14pm </span></li>
+<li>knox: mom?<span>10:17:16pm </span></li>
+<li>Sam what's all the chit chat about?: Who is what?<span>10:17:25pm </span></li>
+<li>Sam what's all the chit chat about?: Sam<span>10:17:38pm </span></li>
+<li>KNOXY BIG BOY: what<span>10:17:49pm </span></li>
+<li>Sam what's all the chit chat about?: Sammy<span>10:18:03pm </span></li>
+<li>KNOXY BIG BOY: is that mom?<span>10:18:06pm </span></li>
+<li>Sam what's all the chit chat about?: I'm confused<span>10:18:19pm </span></li>
+<li>Sam what's all the chit chat about?: Help me please<span>10:18:35pm </span></li>
+<li>Knox: reload your webpage<span>10:19:07pm </span></li>
+<li>Sam what's all the chit chat about?: I want a new name<span>10:19:10pm </span></li>
+<li>Knox: then type a name and press enter<span>10:19:16pm </span></li>
+<li>Knox: reload the page<span>10:19:20pm </span></li>
+<li>Sam what's all the chit chat about?: Hang on<span>10:19:37pm </span></li>
+<li>Knox: you must press enter after you type your name<span>10:19:43pm </span></li>
+<li>Knox: <b>ok</b><span>10:20:01pm </span></li>
+<li>Knox: <span color="red>reload to get a new name</span><span>10:20:45pm </span></li>
+<li>Muchach: How's this?<span>10:21:04pm </span></li>
+<li>Knox: <div style="color:red">You have to reload</div><span>10:21:13pm </span></li>
+<li>Muchach: Muchacha<span>10:21:24pm </span></li>
+<li>Knox: <h2>reload it</h2><span>10:21:30pm </span></li>
+<li>Knox: lol<span>10:21:32pm </span></li>
+<li>Knox: who is muchach<span>10:21:37pm </span></li>
+<li>Muchach: Que?<span>10:21:52pm </span></li>
+<li>Knox: Hola chica!<span>10:22:03pm </span></li>
+<li>Knox: Me gusta la Comida!<span>10:22:13pm </span></li>
+<li>Muchach: Hola mi amigo<span>10:22:19pm </span></li>
+<li>Knox: haha<span>10:22:24pm </span></li>
+<li>Muchach: Me gusta taco bell<span>10:22:46pm </span></li>
+<li>CrustyBigBoy: Me gusta el chocolate<span>10:22:59pm </span></li>
+<li>Edward loves knoxie: Hi people <span>10:23:01pm </span></li>
+<li>CrustyBigBoy: haha<span>10:23:14pm </span></li>
+<li>CrustyBigBoy: who are these people<span>10:23:18pm </span></li>
+<li>Edward loves knoxie: It's me big boy<span>10:23:27pm </span></li>
+<li>CrustyBigBoy: who<span>10:23:32pm </span></li>
+<li>CrustyBigBoy: grayson?<span>10:23:35pm </span></li>
+<li>Edward loves knoxie: MEEEEEE<span>10:23:40pm </span></li>
+<li>Muchach: Te quiero big bouy<span>10:23:45pm </span></li>
+<li>CrustyBigBoy: lol what<span>10:23:47pm </span></li>
+<li>Edward loves knoxie: Me <span>10:24:00pm </span></li>
+<li>Edward loves knoxie: Tristito<span>10:24:09pm </span></li>
+<li>CrustyBigBoy: who<span>10:24:09pm </span></li>
+<li>CrustyBigBoy: Tell me crusty lololololololol<span>10:24:26pm </span></li>
+<li>Muchach: 😘<span>10:24:59pm </span></li>
+<li>TheBigBoy: what<span>10:25:08pm </span></li>
+<li>TheBigBoy: how did that work lol<span>10:25:13pm </span></li>
+<li>Muchach: Smileys work on here!<span>10:25:15pm </span></li>
+<li>Edward loves knoxie: Tristan <span>10:25:17pm </span></li>
+<li>TheBigBoy: I created this website<span>10:25:29pm </span></li>
+<li>TheBigBoy: I need to block smileys<span>10:25:37pm </span></li>
+<li>Muchach: 😘<span>10:25:42pm </span></li>
+<li>Edward loves knoxie: 🍆🍆🍆🍆🍆🍆🍆🍆🍆🍑<span>10:25:45pm </span></li>
+<li>TheBigBoy: omg haha<span>10:25:54pm </span></li>
+<li>TheBigBoy: how do they even work<span>10:25:58pm </span></li>
+<li>Edward loves knoxie: _<span>10:26:00pm </span></li>
+<li>Edward loves knoxie: 8-----><span>10:26:12pm </span></li>
+<li>Phone: 😁😉😯😕😢😠😧😆😢<span>10:26:13pm </span></li>
+<li>Muchach: Muchacha over and out<span>10:26:17pm </span></li>
+<li>TheBigBoy: lol<span>10:26:20pm </span></li>
+<li>TheBigBoy: haha ok muchcach<span>10:26:27pm </span></li>
+<li>TheBigBoy: bye<span>10:27:41pm </span></li>
+<li>TheBigBoy: ok<span>10:27:57pm </span></li>
+<li>TheBigBoy: <span>10:28:14pm </span></li>
+<li>Phone: Ok<span>10:48:34pm </span></li>
+<li>Phone: Bye<span>10:48:37pm </span></li>
+<li>Tom: Hey<span>11:35:15am </span></li>
+<li>Guest15: hi<span>11:46:40am </span></li>
+<li>abcdefghijklmnop: ji<span>12:13:28pm </span></li>

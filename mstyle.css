@@ -1,92 +1,228 @@
-body{
-  background-color:#607D8B;
+/* This is a css file for the jquery mobile game page. */
+/* Group: Michaela, Knox, Jayden */
+/* in the same directory as index.html */
+
+body {
+    background-color: #607D8B;
 }
-*{      text-shadow:0 0 0;
-font-family:Open Sans
+* {
+    text-shadow: 0 0 0;
+    font-family: Open Sans;
 }
 .ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button {
     font-family: Open Sans;
 }
-h1{
-  font-family: 'Lato', sans-serif;
-  font-weight:300;
-}
-#chatbox{
-  border:1px solid white;
-  border-radius:5px;
-  padding:3px;
-}
-#bell{
-  padding-top:10px;
-  width:50px;
-  height:50px;
-  text-align:center;
+#badlogin{
+background-color: #FF5252;
 }
 
-@-moz-keyframes wobble  {
-  0%  { -webkit-transform:  rotate(0deg); }
-  20%  { -webkit-transform:  rotate(10deg); }
-  50%  { -webkit-transform:  rotate(-10deg); }
-  100%  { -webkit-transform:  rotate(0deg); }
 }
-@-webkit-keyframes wobble  {
-  0%  { -webkit-transform:  rotate(0deg); }
-  20%  { -webkit-transform:  rotate(10deg); }
-  50%  { -webkit-transform:  rotate(-10deg); }
-  100%  { -webkit-transform:  rotate(0deg); }
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
 }
-@keyframes wobble  {
-  0%  { -webkit-transform:  rotate(0deg); }
-  20%  { -webkit-transform:  rotate(10deg); }
-  50%  { -webkit-transform:  rotate(-10deg); }
-  100%  { -webkit-transform:  rotate(0deg); }
+.ui-page .ui-header {
+    background: #536DFE !important;
 }
-.spin{
-      -webkit-animation:wobble 500ms linear;
-    -moz-animation:wobble 500ms linear;
-    animation:wobble 500ms linear;
+#login {
+    padding: 20px;
 }
-#messagebox{
-  font-family:Lato, Arial;
+#pageone {}
+#topimg {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding: 4px;
 }
-#messagebox td{padding:0px;}
-#messagebox ul{
+#chatbox {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px;
+}
+#bell {
+    padding-top: 10px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+#byeimage {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+#malert {
+    height: 30px;
+    width: 30px;
+}
+@-moz-keyframes wobble {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    20% {
+        -webkit-transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(-10deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes wobble {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    20% {
+        -webkit-transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(-10deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+@keyframes wobble {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    20% {
+        -webkit-transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(-10deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+.spin {
+    -webkit-animation: wobble 500ms linear;
+    -moz-animation: wobble 500ms linear;
+    animation: wobble 500ms linear;
+    height: 30px;
+    width: 30px;
+}
+#messagebox {
+    font-family: Lato, Arial;
+}
+#messagebox td {
+    padding: 0px;
+}
+#messagebox ul {
     list-style-type: none;
     list-style-position: inside;
-    padding:10px;
-    overflow-y:scroll;
-    height:300px;
-    
+    padding: 10px;
+    overflow-y: scroll;
+    height: 300px;
 }
-
-#messagebox li{
-    color:white;
-    padding:5px;
-    font-size:11pt;
-    background-color:#607D8B;
+#messagebox li {
+    color: white;
+    padding: 5px;
+    font-size: 10pt;
+    background-color: #607D8B;
     border-bottom: 2px solid #263238;
 }
-#messagebox li:nth-child(odd) {background-color:#455A64}
-#messagebox li span{
-    float:right;
-    color:#B0BEC5;
-    font-style:italic;
+#messagebox li b {
+    color: red;
 }
-#labelbox{
-  font-size:11pt;
-  padding:0px 20px 0px 20px;
+#messagebox li:nth-child(odd) {
+    background-color: #455A64
+}
+#messagebox li span {
+    float: right;
+    color: #B0BEC5;
+    font-style: italic;
+}
+#labelbox {
+    font-size: 11pt;
+    padding: 0px 20px 0px 20px;
+}
+#inputbox {
+    padding: 0px 20px 10px 20px;
+    display: inlinel
+}
+#inputbox input {
+    color: blue;
+}
+.center {
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+.checkbtn {
+    float: right;
+}
+#gamepage{
+  height:inherit;
+}
+#gamepage table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 90%;
+    height: 300px;
+    background-color: #607D8B;
+    margin-bottom: 20px;
+}
+#gamepage td {
+    color: #18FFFF;
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 15px;
+    background-color: #607D8B;
+}
+#gamepage td span {
+    color: #F50057;
+    float: right;
+}
+#gamepage th {
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #2196F3;
+}
+#macontain {
+    width: 100%;
+    padding: 0px;
+}
+#malert {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-
-#inputbox{
-  padding: 0px 20px 10px 20px;
-  display:inlinel
+/* Style for mobile devices */
+@media only screen and (max-device-width: 480px) {
+    #topimg {
+        width: 100%;
+    }
+    html {
+        width: 100%;
+    }
 }
-#inputbo input{
-  color:blue;
-}
-.center{margin:0 auto; text-align:center;}
-.checkbtn{
-  float:right;
 
+/* This css affects only desktops */
+@media screen and (min-width: 800px) {
+    #gamepage table {
+        width: 40%;
+    }
+    #chatbox {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .ui-page{
+      width: 800px !important;
+      margin: 0 auto !important;
+      position: relative !important;
+      border: 1px solid black !important;
+    }
 }

@@ -1,0 +1,267 @@
+body {
+	background-color:#00BCD4;
+	
+}
+
+.main {
+	width:1100px;
+  min-height:700px;
+	color:black;
+	background-color:white;
+	min-height:800px;
+	margin:50px;
+	margin:0 auto;
+  padding:20px;
+}
+.main p{
+	font-family: Roboto, arial;
+	padding:25px;
+
+}
+@keyframes mymove {
+	0% {letter-spacing:1px; color:#00BCD4;}
+    50% {letter-spacing: 12px; color:black;}
+}
+/*Main page title*/
+.title {
+	animation:mymove 5s;
+	font-family: Open Sans, sans-serif;
+	color:black;
+	
+}
+/*Sub-title for inside gamebox*/
+.subtitle{
+	font-family:Open Sans, arial;
+	text-align:center;
+  padding:0;
+}
+
+.greenbutton {
+  margin-top:20px;
+  font-size:12pt;
+  font-family: calibri; 
+  text-transform: uppercase;
+  border:1px solid #73af00;
+  color:black;
+  background-color:#9DE11A;
+  padding:5px;
+  transition: 250ms;
+}
+
+.greenbutton:hover {
+  background-color: #e4e4e4;
+  border: 1px solid #d7d7d7;
+box-shadow: 7px 7px 7px #888888;
+cursor: crosshair;
+}
+
+/* Container for the main game */
+#gamebox {
+	color:black;
+	height:600px;
+	width:950px;
+	border:1px solid black;
+	padding:10px;
+	margin:0 auto;
+}
+#gametable{
+  padding:0;
+  width:100%;
+  height:520px;
+  border-collapse:collapse;
+}
+#chatcell{
+  width:198px;
+  border:1px solid black;
+}
+#contentcell{
+  width:792px;
+  border:1px solid black;
+}
+#messagecell{
+  height:110px;
+}
+
+/* Frame1 prompts the player for what kind of game they want to play*/
+#initframe {
+	font-family: Roboto, arial;
+	color:black;
+	width:100%;
+	height:100%;
+	padding:20px;
+}
+#initframe table{
+	table-layout:fixed;
+	width:70%;
+	margin:0 auto;
+	border-collapse:collapse;
+}
+#initframe td{
+	text-align:center;
+  background-color:white;
+	border:1px solid black;
+	padding:10px;
+	padding-top:25px;
+  transition: 250ms;
+}
+#initframe td:hover{
+   filter: invert(1);
+	-webkit-filter: invert(1);
+	-moz-filter: invert(1);
+	-o-filter: invert(1);
+	-ms-filter: invert(1);
+  transition: 250ms;
+}
+#initframe th{
+	font-family: Roboto, arial;
+	font-weight:bold;
+	border:1px solid black;
+}
+#initframe p{
+	padding:20px;
+}
+#initframe img{
+	height:100px;
+	width: 100px;
+	transition:500ms;
+}
+
+/* Frame2 user plays against a computer */
+#singleframe {
+  height:100%;
+}
+
+
+/* Frame3 user plays against another user */
+#frame3 {
+	width:50%;
+	margin:0 auto;
+}
+#gametable{
+  width:100%;
+  background-color:#607D8B;
+}
+#gamecell{
+}
+#chatboxcell{
+  width:402px;
+}
+#chatbox{
+  width:400px;
+  height:500px;
+  border:1px solid black;
+  padding:3px;
+  background-color:#607D8B;
+  float:right;
+}
+#bell{
+  padding-top:10px;
+  width:50px;
+  height:50px;
+  text-align:center;
+}
+
+@-moz-keyframes wobble  {
+  0%  { -webkit-transform:  rotate(0deg); }
+  20%  { -webkit-transform:  rotate(10deg); }
+  50%  { -webkit-transform:  rotate(-10deg); }
+  100%  { -webkit-transform:  rotate(0deg); }
+}
+@-webkit-keyframes wobble  {
+  0%  { -webkit-transform:  rotate(0deg); }
+  20%  { -webkit-transform:  rotate(10deg); }
+  50%  { -webkit-transform:  rotate(-10deg); }
+  100%  { -webkit-transform:  rotate(0deg); }
+}
+@keyframes wobble  {
+  0%  { -webkit-transform:  rotate(0deg); }
+  20%  { -webkit-transform:  rotate(10deg); }
+  50%  { -webkit-transform:  rotate(-10deg); }
+  100%  { -webkit-transform:  rotate(0deg); }
+}
+.spin{
+      -webkit-animation:wobble 500ms linear;
+    -moz-animation:wobble 500ms linear;
+    animation:wobble 500ms linear;
+}
+#messagebox{
+  height:500px;
+}
+#messagebox td{padding:0px;}
+#messagebox ul{
+  list-style-type: none;
+  list-style-position: inside;
+    padding:1px;
+    overflow-y:scroll;
+    height:500px;
+}
+#messagebox li{
+    color:white;
+    padding:5px;
+    font-size:10pt;
+    height:15px;
+    margin:5px;
+    border: 1px solid #263238;
+    border-radius:5px;
+    background-color:#536DFE;
+    white-space: nowrap;
+}
+#messagebox li span{
+    float:right;
+    color:#212121;
+}
+
+
+#inputbox{
+  height:50px;
+  border-top:1px solid black;
+  margin:0 auto;
+  color:white;
+  font-size:12pt;
+}
+#inputbox input{
+  border:1px solid black;
+  width:300px;
+  margin:3px;
+  font-size:14pt;
+}
+#inputheader{
+  font-size:10pt;
+}
+.content{
+	
+}
+.hidden {
+	display:none;
+}
+@media screen and (max-width: 481px){
+  body{
+    padding:0px;
+  }
+  .main {
+    width:100%;
+  }
+  .title{
+    width:100%;
+  }
+  #chatbox{
+    width:100%;
+    float:none;
+    margin:0 auto;
+  }
+  #messagebox{
+    width:80%;
+    height:302px;
+  }
+  #messagebox ul{
+    height:300px;
+  }
+  #messagebox li{
+    color:white;
+    padding:5px;
+    font-size:8pt;
+    height:13px;
+   }
+
+
+}

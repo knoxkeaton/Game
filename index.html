@@ -1,62 +1,164 @@
 <!--
-  Name: Knox Hall
-  Date: 1/25/16
-  Class: CSC-2210 Spring 2016
-  Location: ~/public_html/csc2210/
-  -->
+   Name: Knox Hall
+   Date: 1/25/16
+   Class: CSC-2210 Spring 2016
+   Location: ~/public_html/csc2210/
+   -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"
-      type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel=
-      'stylesheet' type='text/css'>
-      <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="mstyle.css" media="all" rel="stylesheet">
-    <link href="../include/jquery.mobile-1.4.5.min.css" media="all" rel="stylesheet">
-    <script src='../include/jquery-1.12.0.min.js' type='text/javascript'></script>
-    <script src='../include/jquery.mobile-1.4.5.min.js' type='text/javascript'></script>
-    
+
+<head>
+  <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+  <link href="mstyle.css" media="all" rel="stylesheet">
+  <link href="../include/jquery.mobile-1.4.5.min.css" media="all" rel="stylesheet">
+  <script src='../include/jquery-1.12.0.min.js' type='text/javascript'></script>
+  <script src='../include/jquery.mobile-1.4.5.min.js' type='text/javascript'>
+  </script>
   <title>Welcome</title>
-  </head>
-  <body>
-  <audio id="msound" src="data/sound_2.wav"></audio>
-    <div id="mainpage" data-role="page" data-theme="b">
-      <div data-role="header">
-        <h1>WELCOME TO THE GAME</h1>
+</head>
+
+<body>
+  <div data-role="page" data-theme="b" id="pageone">
+    <div data-role="header" class="header">
+      <h1>Prisoner's Dilemma</h1>
+    </div>
+    <div data-role="content" id="content">
+      <img id="topimg" src="data/prison.jpg">
+      <div data-role="header" class="header">
+        <h1>Please Login</h1>
       </div>
-      <div  id="content" data-role="content">
-      <div class="center">Swipe left for the information page</div>
-        <div data-role="collapsible" >
-          <h3>Introduction</h3>
-          <p>Welcome to The Chatroom demo. The messages are stored in a text file on the server.  
-            Every three seconds the the chat file is checked for updates, if it was recently updated, it is reprinted.  
-            You will be prompted for a nickname.  Php scripts only allow a maximum of 200 lines at a time in the file.  
-            For some reason the timestamps are misaligned in firefox.  Enjoy!
-          </p>
+      <div id="login">
+        <div class="ui-content" data-role="popup" id="badlogin">
+          <a class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right" data-rel="back" href="#">Close</a>
+          <p id="poperror">Sorry, this login information is not correct!</p>
         </div>
-        <div id="chatbox">
-          <div id="messagebox">
-            <ul id="messagelist"></ul>
-          </div>
-          <div id="labelbox">Enter a nickname. </br> If nothing is entered, you will be called Guest</div>
-          <div id="inputbox">
-            <input id="inputtext" name="inputtext" type="text" maxlength="50" value="" data-theme="a">
-          </div>
+        <form method="post" id=loginform>
+          <label for="email">Email:</label>
+          <input id="email" name="email" placeholder="Address@email.com" type="text">
+          <label for="email">Password:</label>
+          <input id="pass" name="pass" placeholder="******" type="password">
+          <input type="button" value="Submit" onclick="login(this.form)">
+          <input type="reset" value="Reset">
+        </form>
+      </div>
+      <div data-role="collapsible">
+        <h3 id="signup">New Account</h3>
+        <form id="newaccount" method="post" onsubmit="newaccount(this)">
+          <label for="nemail">Email:</label>
+          <input id="nemail" required maxlength="20" name="nemail" placeholder="Bobby@mail.com" type="text" />
+          <label for="fname">First Name:</label>
+          <input id="fname" required maxlength="20" name="fname" placeholder="Bobby" type="text" />
+          <label for="lname">Last Name:</label>
+          <input id="lname" required maxlength="20" name="lname" placeholder="Smith" type="text" />
+          <label for="passnew">Password must be longer than 5 chars and have a letter, a symbol, and a number:</label>
+          <input id="passnew" required maxlength="20" name="passnew" placeholder="******" type="text" />
+          <label id="confirmlabel" for="pconfirm">Password Confirm:</label>
+          <input id="pconfirm" required maxlength="20" name="pconfirm" placeholder="******" type="text" />
+          <label for="isinstruct">Instructor?</label>
+          <select data-role="slider" id="isinstruct" name="isinstruct">
+            <option value="0">
+              Off
+            </option>
+            <option value="1">
+              On
+            </option>
+          </select>
+          <input type="button" onclick="newaccount(this.form)" value="Submit">
+          <input type="reset" value="Reset">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div data-role="page" data-theme="b" id="chatpage">
+    <div data-role="header" class="header">
+      <h1>Chat</h1>
+      <a href="#gamepage" data-role="button" data-icon="home" data-iconshadow="false" data-transition="slide" data-direction="reverse" data-iconpos="notext" class="ui-btn-left">home</a>
+
+    </div>
+    <div data-role="content">
+      <div id="chatbox">
+        <div id="messagebox">
+          <img id="bell" src="data/bell.png" />
+          <ul id="messagelist"></ul>
+        </div>
+        <div id="labelbox">
+          Name:
+          <br> Press enter to send.
+        </div>
+        <div id="inputbox">
+          <input data-theme="a" id="inputtext" maxlength="50" name="inputtext" type="text" value="">
         </div>
       </div>
     </div>
-    <div id="secondpage" data-role="page" data-theme="b">
-      <div data-role="header">
-        <h1>Information</h1>
-      </div>
-      <div  data-role="content">
-            <div class="center"><div class="center">Swipe right for the main page</div></div>
-      <p>This page was created by Knox Hall using JQuery, Javascript, AJAX, PHP, HTML, CSS, and JQueryMobile.
-      </p>
-          </div>
+  </div>
+  <div data-role="page" data-theme="b" id="instructpage">
+    <div data-role="header" class="header">
+      <h1>Instruct</h1>
+      <a href="#gamepage" data-role="button" data-icon="home" data-iconshadow="false" data-transition="slide" data-iconpos="notext" class="ui-btn-right">home</a>
+    </div>
+    <div data-role="content">
+      <p>Welcome to the instructorpage!!</p>
+    </div>
+  </div>
+  <div data-role="page" data-theme="b" id="gamepage">
+    <div data-role="header" class="header">
+      <h1 id="gametitle"></h1>
+      <a href="#chatpage" data-role="button" id="chatbutton" data-icon="comment" data-iconshadow="false" data-iconpos="notext" data-transition="slide" class="ui-btn-right"></a>
+      <a href="#instructpage" id="instructbutton" data-role="button" data-icon="gear" data-iconshadow="false" data-transition="slide" data-direction="reverse" data-iconpos="notext" class="ui-btn-left">home</a>
+    </div>
+    <div data-role="content">
+      <p>Welcome to Prisoner's Dilemma! Swipe left for Chat!</p>
+      <table>
+        <tr>
+          <td colspan="2">You will get this many points</td>
+          <th colspan="2">Opponent's Move</th>
+        </tr>
+        <tr>
+          <td colspan="2"><span>Your opponent will get this many</span></td>
+          <th>Option A</th>
+          <th>Option B</th>
+        </tr>
+        <tr>
+          <th rowspan="2">Your move</th>
+          <th>Option A</th>
+          <td>10 <span>10</span></td>
+          <td>2<span>14</span></td>
+        </tr>
+        <tr>
+          <th>Option B</th>
+          <td>14<span>2</span></td>
+          <td>6<span>6</span></td>
+        </tr>
+      </table>
+      <div class="center">
+        <p>Which will you choose?</p>
+        <div data-role="controlgroup" data-type="horizontal">
+          <a href="#" class="ui-btn" onclick="choose('a')">Option A</a>
+          <a href="#" class="ui-btn" onclick="choose('b')">Option B</a>
         </div>
-        <script type='text/javascript' src="script.js"></script>
-  </body>
+      </div>
+
+    </div>
+    <div data-role="footer" data-postion="fixed">
+      <a href="#logoutpage" data-role="button" data-icon="power" data-iconshadow="false" onclick="logout" data-transition="fade" class="ui-btn-right">Logout</a>
+    </div>
+
+  </div>
+  <div data-role="page" data-theme="b" id="logoutpage">
+    <div data-role="header" class="header">
+      <h1>Logged Out</h1>
+      <a href="#pageone" data-role="button" data-icon="home" data-iconshadow="false" data-transition="fade" data-iconpos="left" class="ui-btn-left">Home</a>
+    </div>
+    <div data-role="content">
+      <p class="center">You have logged out.</p>
+      <img src="data/bye.png" id="byeimage"> </div>
+  </div>
+
+  <script src='game.js' type='text/javascript'>
+  </script>
+</body>
+
 </html>
